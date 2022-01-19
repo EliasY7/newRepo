@@ -4,7 +4,20 @@
     <head>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-            body {background-color: #2F3136;}
+            body {
+                background-color: #2F3136;
+                animation: fadeInAnimation ease 2s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+                }
+                @keyframes fadeInAnimation {
+                    0% {
+                        opacity: 0;
+                    }
+                    100% {
+                        opacity: 1;
+                    }
+                }
             h1 {
                 color: #2e94d8;
                 text-align: center;
